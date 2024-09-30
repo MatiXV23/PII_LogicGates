@@ -6,9 +6,9 @@ public class GarageGate
     public int BotonB = 0;
     public int BotonC = 0;
 
-    public void ButtonPrinter()
+    public string ButtonPrinterMSG()
     {
-        Console.WriteLine($"C: {BotonC}   B: {BotonB}   A: {BotonA}");
+       return $"C: {BotonC}   B: {BotonB}   A: {BotonA}";
     }
     public void PressButtonABC(string button)
     {

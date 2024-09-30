@@ -31,10 +31,12 @@ public class And : ILogicGate
     
     public int Calculate()
     {
-        int prod = 1;
+        int prod = 0;
+        int aux = 1;
         foreach (var entrada in Entradas)
         {
-            prod *= entrada.Valor;
+            aux *= entrada.Valor;
+            prod = aux;
         }
         
         return prod;
