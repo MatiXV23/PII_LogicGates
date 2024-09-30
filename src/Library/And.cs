@@ -7,7 +7,6 @@ public class And : ILogicGate
 {
     public string Name { get; }
     public List<Entrada> Entradas { get; }
-
     
     public And(string name)
     {
@@ -42,7 +41,7 @@ public class And : ILogicGate
         return prod;
     }
 
-    public int ExistEn(string name)
+    private int ExistEn(string name)
     {
         int index = -1;
         int aux = 0;
@@ -56,16 +55,5 @@ public class And : ILogicGate
         }
 
         return index;
-    }
-}
-
-public class TestAnd
-{
-    public static void test1()
-    {
-        And and1 = new And("and1");
-        and1.AgregarEntrada("A", 1);
-        and1.AgregarEntrada("B", 1);
-        Console.WriteLine(and1.Calculate());
     }
 }

@@ -25,7 +25,7 @@ public class Or : ILogicGate
             Entradas.Add(newEntrada);
         }
     }
-    public int ExistEn(string name)
+    private int ExistEn(string name)
     {
         int index = -1;
         int aux = 0;
